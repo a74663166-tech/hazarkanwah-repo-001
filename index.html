@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HAZARKANWAH - CLOSED 9-AXIS CORE</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="top">
+    <h1>HAZARKANWAH — CLOSED 9-AXIS CORE</h1>
+    <p class="desc">واجهة متصفحية بسيطة لتشغيل واختبار النواة ذات 9 محاور (AXIS_1..AXIS_9). لا تتطلب مفاتيح API.</p>
+  </header>
+
+  <main class="container">
+    <section class="controls">
+      <div class="panel">
+        <h2>النواة والمحاور</h2>
+        <label for="axisSelect">اختر محور:</label>
+        <select id="axisSelect"></select>
+
+        <div class="axis-editor">
+          <label for="axisValue">قيمة المحور: <span id="axisValueLabel">0</span></label>
+          <input id="axisValue" type="range" min="0" max="100" value="0">
+          <div class="axis-actions">
+            <button id="setAxisBtn">تعيين</button>
+            <button id="resetAxisBtn">إعادة للمبدئي</button>
+            <button id="randomAxisBtn">عشوائي</button>
+          </div>
+        </div>
+
+        <div class="system-controls">
+          <button id="resetCoreBtn">إعادة النواة</button>
+          <button id="randomizeAllBtn">عشوائي لكل المحاور</button>
+          <button id="applyBtn" class="primary">تطبيق التغييرات</button>
+          <button id="exportBtn">تصدير JSON</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>محاور مُفعّلة</h2>
+        <div id="enabledAxes" class="axis-list"></div>
+      </div>
+    </section>
+
+    <section class="output">
+      <div class="panel">
+        <h2>كونسول الحالة (JSON)</h2>
+        <textarea id="jsonOutput" readonly></textarea>
+        <div class="output-actions">
+          <button id="copyJsonBtn">نسخ</button>
+          <button id="clearJsonBtn">مسح</button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>سجل الإجراءات</h2>
+        <ul id="log"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>HAZARKANWAH — demo UI • Local-only • No external services</small>
+  </footer>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
