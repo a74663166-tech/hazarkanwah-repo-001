@@ -1,0 +1,12 @@
+Branch: main
+Commit: 892d859
+Author: a74663166-tech <a74663166@gmail.com>
+Date:   2026-09-04T13:58:07Z
+Subject: Add UNFA_ATLASSIAN_SUPPORT_READY.md: prepared Atlassian Ecosystem Support Request draft
+
+Files changed:
+UNFA_ATLASSIAN_SUPPORT_READY.md | 65 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1 file changed, 65 insertions(+), 0 deletions(-)
+
+Commit URL: https://github.com/a74663166-tech/hazarkanwah-repo-001/commit/892d859ec7d172e4002b1c11de025a94ca1fe244
